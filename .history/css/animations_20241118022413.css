@@ -1,0 +1,19 @@
+/* 导航链接悬停动画 */
+.nav-links a:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* 轮播图动画 */
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 

@@ -1,0 +1,20 @@
+/* 响应式布局 */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* 移动端菜单将通过JS控制显示 */
+    }
+    
+    .hero-slider {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-auth {
+        display: none;
+    }
+    
+    .hero-slider {
+        height: 40vh;
+    }
+} 

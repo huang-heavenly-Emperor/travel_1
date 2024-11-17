@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>旅游指南 - 环球旅行</title>
+  <link rel="stylesheet" href="../css/themes.css"> 
+  <link rel="stylesheet" href="../css/ux.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <script src="../js/ux.js" defer></script>
+  <script src="../js/theme.js" defer></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+      <div class="nav-logo">
+          <h1>环球旅行</h1>
+      </div>
+      
+      <!-- 汉堡菜单按钮 -->
+      <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      
+      <!-- 导航菜单 -->
+      <div class="nav-menu">
+          <ul class="nav-links">
+              <li><a href="../index.html">首页</a></li>
+              <li><a href="about.html">关于我们</a></li>
+              <li><a href="guide.html" class="active">旅游指南</a></li>
+          </ul>
+          <div class="theme-switch">
+            <button class="theme-toggle" aria-label="切换主题">
+                <i class="fas fa-sun light-icon"></i>
+                <i class="fas fa-moon dark-icon"></i>
+            </button>
+        </div>
+          <div class="nav-auth">
+              <a href="login.html" class="btn-login">登录</a>
+              <a href="register.html" class="btn-register">注册</a>
+          </div>
+      </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="guide-header">
+      <div class="container">
+          <div class="header-content">
+              <h1>旅游指南</h1>
+              <p>探索世界每个角落的精彩</p>
+          </div>
+      </div>
+  </header>
+  <!-- 主要内容 -->
+  <main>
+    <!-- 搜索区域 -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-box">
+          <input type="text" placeholder="搜索目的地、攻略、游记...">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="popular-tags">
+          <span>热门搜索：</span>
+          <a href="#">日本</a>
+          <a href="#">泰国</a>
+          <a href="#">马尔代夫</a>
+          <a href="#">意大利</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 目的地推荐 -->
+    <section class="destinations">
+      <div class="container">
+        <div class="section-header">
+          <h2>热门目的地</h2>
+          <p>发现最受欢迎的旅游胜</p>
+        </div>
+        <div class="destination-grid">
+          <!-- 东京 -->
+          <div class="destination-card">
+            <div class="card-image">
+              <img src="https://picsum.photos/800/600?random=1" alt="东京">
+              <span class="destination-tag">亚洲</span>
+            </div>
+            <div class="card-content">
+              <h3>东京</h3>
+              <p>现代与传统交织的都市魅力</p>
+              <div class="card-meta">
+                <span><i class="fas fa-map-marker-alt"></i> 日本</span>
+                <span><i class="fas fa-star"></i> 4.8</span>
+              </div>
+              <a href="#" class="btn-more">了解更多</a>
+            </div>
+          </div>
+
+          <!-- 巴黎 -->
+          <div class="destination-card">
+            <div class="card-image">
+              <img src="https://picsum.photos/800/600?random=2" alt="巴黎">
+              <span class="destination-tag">欧洲</span>
+            </div>
+            <div class="card-content">
+              <h3>巴黎</h3>
+              <p>浪漫之都的艺术与时尚</p>
+              <div class="card-meta">
+                <span><i class="fas fa-map-marker-alt"></i> 法国</span>
+                <span><i class="fas fa-star"></i> 4.7</span>
+              </div>
+              <a href="#" class="btn-more">了解更多</a>
+            </div>
+          </div>
+
+          <!-- 巴厘岛 -->
+          <div class="destination-card">
+            <div class="card-image">
+              <img src="https://picsum.photos/800/600?random=3" alt="巴厘岛">
+              <span class="destination-tag">东南亚</span>
+            </div>
+            <div class="card-content">
+              <h3>巴厘岛</h3>
+              <p>热带天堂的自然与文化</p>
+              <div class="card-meta">
+                <span><i class="fas fa-map-marker-alt"></i> 印度尼西亚</span>
+                <span><i class="fas fa-star"></i> 4.6</span>
+              </div>
+              <a href="#" class="btn-more">了解更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 季节推荐 -->
+    <section class="seasonal-guides">
+      <div class="container">
+        <div class="section-header">
+          <h2>季节旅行指南</h2>
+          <p>根据不同季节规划您的完美旅程</p>
+        </div>
+        <div class="season-tabs">
+          <button class="tab active" data-season="spring">春季</button>
+          <button class="tab" data-season="summer">夏季</button>
+          <button class="tab" data-season="autumn">秋季</button>
+          <button class="tab" data-season="winter">冬季</button>
+        </div>
+        <div class="season-content active" id="spring">
+          <div class="season-grid">
+            <div class="season-item">
+              <img src="https://picsum.photos/800/600?random=4" alt="日本赏樱">
+              <div class="season-info">
+                <h3>日本赏樱之旅</h3>
+                <p>3-4月是日本樱花盛开的季节，推荐东京、京都、大阪等地</p>
+                <a href="#" class="btn-more">查看行程</a>
+              </div>
+            </div>
+            <div class="season-item">
+              <img src="https://picsum.photos/800/600?random=5" alt="荷兰郁金香">
+              <div class="season-info">
+                <h3>荷兰郁金香之旅</h3>
+                <p>4-5月是荷兰郁金香盛开的季节，推荐阿姆斯特丹、库肯霍夫等地</p>
+                <a href="#" class="btn-more">查看行程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 实用攻略 -->
+    <section class="travel-tips">
+      <div class="container">
+        <div class="section-header">
+          <h2>实用攻略</h2>
+          <p>专业的旅行建议，让您的旅程更加完美</p>
+        </div>
+        <div class="tips-grid">
+          <article class="tip-card">
+            <div class="tip-image">
+              <img src="https://picsum.photos/800/600?random=6" alt="行前准备">
+            </div>
+            <div class="tip-content">
+              <h3>行前准备指南</h3>
+              <p>护照签证、行李打包、保险选择等详细建议</p>
+              <a href="#" class="btn-more">查看详情</a>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-image">
+              <img src="https://picsum.photos/800/600?random=7" alt="旅行预算">
+            </div>
+            <div class="tip-content">
+              <h3>旅行预算规划</h3>
+              <p>机票住宿、餐饮购物、景点门票等费用参考</p>
+              <a href="#" class="btn-more">查看详情</a>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-image">
+              <img src="https://picsum.photos/800/600?random=8" alt="旅行摄影">
+            </div>
+            <div class="tip-content">
+              <h3>旅行摄影技巧</h3>
+              <p>构图要领、设备选择、后期处理等专业建</p>
+              <a href="#" class="btn-more">查看详情</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- 页脚部分 -->
+    <footer class="footer">
+      <div class="footer-top">
+          <div class="container">
+              <div class="footer-grid">
+                  <!-- 公司简介 -->
+                  <div class="footer-company">
+                      <h3>环球旅行</h3>
+                      <p>专业的旅游服务提供商，致力于为您打造完美的旅行体验。</p>
+                      <div class="social-links">
+                          <a href="#"><i class="fab fa-weixin"></i></a>
+                          <a href="#"><i class="fab fa-weibo"></i></a>
+                          <a href="#"><i class="fab fa-qq"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+
+                  <!-- 快速链接 -->
+                  <div class="footer-links">
+                      <h3>快速链接</h3>
+                      <ul>
+                          <li><a href="pages/about.html">关于我们</a></li>
+                          <li><a href="pages/destinations.html">目的地</a></li>
+                          <li><a href="pages/travel-tips.html">旅游攻略</a></li>
+                          <li><a href="pages/contact.html">联系我们</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- 热门目的地 -->
+                  <div class="footer-destinations">
+                      <h3>热门目的地</h3>
+                      <ul>
+                          <li><a href="#">巴黎</a></li>
+                          <li><a href="#">东京</a></li>
+                          <li><a href="#">圣托里尼</a></li>
+                          <li><a href="#">马尔代夫</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- 联系方式 -->
+                  <div class="footer-contact">
+                      <h3>联系我们</h3>
+                      <ul>
+                          <li><i class="fas fa-phone"></i> 400-888-8888</li>
+                          <li><i class="fas fa-envelope"></i> service@globaltravel.com</li>
+                          <li><i class="fas fa-map-marker-alt"></i> 北京市朝阳区xxx街xxx号</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+  </footer>
+
+  <script src="../js/guide.js"></script>
+</body>
+
+</html>

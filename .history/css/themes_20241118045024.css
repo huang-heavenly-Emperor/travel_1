@@ -1,0 +1,36 @@
+:root {
+    /* 主题色 */
+    --primary-color: #0d0b52;
+    --secondary-color: #3458b9;
+    --accent-color: #ff4d4d;
+    
+    /* 文字颜色 */
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-light: #ffffff;
+    
+    /* 背景色 */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-dark: #333333;
+    
+    /* 边框颜色 */
+    --border-color: #e5e5e5;
+    
+    /* 功能色 */
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+/* 深色主题 */
+[data-theme="dark"] {
+    --primary-color: #325b97;
+    --secondary-color: #9cafeb;
+    --text-primary: #e1e1ff;
+    --text-secondary: #b8b8b8;
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --border-color: #2a2a3a;
+} 

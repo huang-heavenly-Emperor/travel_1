@@ -1,0 +1,61 @@
+/* 白空间优化 */
+.section {
+    padding: 4rem 5%;
+    margin: 2rem 0;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 文本可读性优化 */
+.text-content {
+    line-height: 1.8;
+    max-width: 70ch; /* 优化阅读宽度 */
+    margin: 0 auto;
+}
+
+/* 交互反馈动画 */
+.interactive-element {
+    transition: all 0.3s ease;
+}
+
+.interactive-element:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 加载状态提示 */
+.loading-skeleton {
+    background: linear-gradient(90deg,
+        var(--bg-secondary) 25%,
+        var(--bg-primary) 50%,
+        var(--bg-secondary) 75%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+/* 微动效 */
+.micro-animation {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.micro-animation:hover {
+    opacity: 0.8;
+}
+
+/* 表单交互优化 */
+.form-input {
+    padding: 0.8rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.1);
+} 

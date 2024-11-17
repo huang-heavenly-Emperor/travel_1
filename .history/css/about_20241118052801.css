@@ -1,0 +1,1373 @@
+/* 页面头部样式 */
+.about-header {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+  /* 导航栏高度 */
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1s ease;
+}
+
+/* 公司简介样式 */
+.company-intro {
+  position: relative;
+  background: linear-gradient(to right, rgba(92, 107, 192, 0.05), rgba(92, 107, 192, 0.1));
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.company-intro .container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro-content {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.intro-image:hover img {
+  transform: scale(1.05);
+}
+
+/* 添加装饰性背景元素 */
+.company-intro::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+  opacity: 0.1;
+  transform: rotate(-45deg);
+}
+
+/* 核心价值观样式 */
+.core-values {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-card i {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 1rem;
+}
+
+/* 团队介绍样式 */
+.team-section {
+  background: linear-gradient(to bottom,
+      var(--bg-primary),
+      var(--bg-secondary));
+  position: relative;
+  padding: 5rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.member-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* 添加图片加载过渡效果 */
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
+
+/* 公司信息卡片样式 */
+.company-info {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-card i {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 发展历程部分样式优化 */
+.history-section {
+  padding: 8rem 0;
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.section-desc {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.history-card {
+  background: var(--bg-primary);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.history-card:hover {
+  transform: translateY(-10px);
+}
+
+.year-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 1;
+  box-shadow: 0 5px 15px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.history-content {
+  padding: 2rem;
+}
+
+.history-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.history-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.history-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 1200px) {
+  .history-grid {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history-section {
+    padding: 4rem 0;
+  }
+  
+  .history-content img {
+    height: 200px;
+  }
+  
+  .history-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .history-content p {
+    font-size: 1rem;
+  }
+  
+  .year-badge {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+/* 服务特色样式 */
+.service-features {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.section-desc {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 1.5rem;
+}
+
+.feature-content h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.feature-list li {
+  padding: 0.5rem 0;
+  color: #666;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li::before {
+  content: '✓';
+  color: #ff4d4d;
+  position: absolute;
+  left: 0;
+}
+
+/* 客户评价样式 */
+.testimonials {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.testimonials-slider {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.testimonial-content i {
+  font-size: 2rem;
+  color: #ff4d4d;
+  opacity: 0.2;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.rating {
+  color: #ffd700;
+  margin-top: 0.5rem;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.slider-controls button {
+  background: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.slider-controls button:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+/* 合作伙伴样式 */
+.partners {
+  background: linear-gradient(-45deg,
+      var(--bg-primary),
+      var(--bg-secondary),
+      var(--bg-primary));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 5rem 0;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.partners-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tab-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: #f8f9fa;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #666;
+}
+
+.tab-btn.active {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.partners-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.partners-grid.active {
+  display: grid;
+}
+
+.partner-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  padding: 1rem;
+  background: #fff;
+}
+
+.partner-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.partner-info h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.partner-info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+  .partners-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    width: calc(50% - 0.5rem);
+    text-align: center;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tab-btn {
+    width: 100%;
+  }
+}
+
+/* 联系方式样式 */
+.contact-info {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #666;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff4d4d;
+}
+
+/* 常见问题样式 */
+.faq-section {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 1.5rem;
+  height: auto;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+/* 新闻动态样式 */
+.news-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.news-image {
+  position: relative;
+  height: 200px;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-date {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 77, 77, 0.9);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-content h3 {
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* 调整页面内容的上边距，固定导航栏留出空间 */
+.about-header {
+  margin-top: 80px;
+  /* 导航栏的高度 */
+}
+
+/* 如果没有 header 的页面，第一个 section 需要添加上边距 */
+.main-content {
+  margin-top: 80px;
+}
+
+.blur-load {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.blur-load::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 0.5
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item {
+  display: none;
+  animation: fade 0.8s ease;
+}
+
+.slider-item.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.slider-prev {
+  left: 0;
+}
+
+.slider-next {
+  right: 0;
+}
+
+.slider-dots {
+  text-align: center;
+  padding: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #717171;
+}
+
+/* 版心容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* 轮播图样式 */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item {
+  display: none;
+  animation: fade 0.8s ease;
+}
+
+.slider-item.active {
+  display: block;
+}
+
+/* 轮播图动画 */
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* 页面标题装饰 */
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), transparent);
+}
+
+/* 时间点动画效果 */
+.timeline-item {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 时间点悬浮效果 */
+.timeline-content {
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* 团队介绍部分优化 */
+.team-section {
+  background: linear-gradient(to bottom,
+      var(--bg-primary),
+      var(--bg-secondary));
+  position: relative;
+}
+
+.team-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(92,107,192,0.1)" stroke-width="1"/></svg>') 0 0/50px 50px;
+  opacity: 0.5;
+}
+
+/* 合作伙伴部分优化 */
+.partners {
+  background: linear-gradient(-45deg,
+      var(--bg-primary),
+      var(--bg-secondary),
+      var(--bg-primary));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 间线装饰效果 */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 110px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      transparent,
+      var(--primary-color) 10%,
+      var(--primary-color) 90%,
+      transparent);
+}
+
+/* 时间点动画效果 */
+.timeline-item {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 时间点悬浮效果 */
+.timeline-content {
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* 团队介绍部分优化 */
+.team-section {
+  background: linear-gradient(to bottom,
+      var(--bg-primary),
+      var(--bg-secondary));
+  position: relative;
+}
+
+.team-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(92,107,192,0.1)" stroke-width="1"/></svg>') 0 0/50px 50px;
+  opacity: 0.5;
+}
+
+/* 合作伙伴部分优化 */
+.partners {
+  background: linear-gradient(-45deg,
+      var(--bg-primary),
+      var(--bg-secondary),
+      var(--bg-primary));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 页面标题装饰 */
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), transparent);
+}
+
+/* 修改 html 和 body 的高度设置 */
+html, body {
+    height: auto !important; /* 使用 !important 确保覆盖其他样式 */
+    min-height: 100%;
+}
+
+/* 确保主要内容容器也有正确的高度 */
+.history-timeline {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* 确保时间线内容可见 */
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 防止内容被其他元素覆盖 */
+.timeline-text {
+    position: relative;
+    z-index: 3;
+}
+
+.timeline-image {
+    position: relative;
+    z-index: 2;
+}
+
+/* 确保容器正确显示 */
+.container {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 临时添加用于调试的样式 */
+.history-timeline * {
+    border: 1px solid rgba(255,0,0,0.1);
+}
+
+/* 时间轴容器样式 */
+.timeline-section {
+    padding: 8rem 0;
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1800px;
+    margin: 4rem auto 0;
+    padding: 2rem 8rem;
+}
+
+/* 中间线条 */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: linear-gradient(to bottom,
+        transparent,
+        var(--primary-color) 10%,
+        var(--primary-color) 90%,
+        transparent
+    );
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* 时间轴项目 */
+.timeline-item {
+    padding: 0 6rem;
+    position: relative;
+    width: 50%;
+    margin-bottom: 8rem;
+}
+
+.timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 左右布局 */
+.timeline-item.left {
+    left: 0;
+    padding-right: 3rem;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: 3rem;
+}
+
+/* 时间点样式 */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--accent-color);
+    border: 4px solid var(--bg-primary);
+    border-radius: 50%;
+    top: 30px;
+    box-shadow: 0 0 0 6px rgba(var(--accent-color-rgb), 0.2);
+    z-index: 2;
+}
+
+.timeline-item.left::before {
+    right: -10px;
+}
+
+.timeline-item.right::before {
+    left: -10px;
+}
+
+/* 内容卡片样式 */
+.timeline-content {
+    background: var(--bg-primary);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 年份样式 */
+.year {
+    position: absolute;
+    top: -25px;
+    background: var(--accent-color);
+    color: var(--text-light);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 5px 15px rgba(var(--accent-color-rgb), 0.3);
+    z-index: 2;
+}
+
+.left .year {
+    right: 30px;
+}
+
+.right .year {
+    left: 30px;
+}
+
+/* 内容样式 */
+.timeline-body {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.timeline-body h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-body p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.timeline-body img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 1600px) {
+    .timeline {
+        max-width: 1400px;
+        padding: 2rem 4rem;
+    }
+    
+    .timeline-item {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .timeline {
+        max-width: 90%;
+        padding: 2rem;
+    }
+    
+    .timeline-item {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .timeline::after {
+        left: 50px;
+    }
+    
+    .timeline-item {
+        width: calc(100% - 100px);
+        padding-left: 100px;
+        padding-right: 2rem;
+        margin-left: auto;
+    }
+    
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
+    
+    .timeline-content {
+        padding: 2rem;
+        min-height: auto;
+    }
+    
+    .timeline-body h3 {
+        font-size: 1.8rem;
+    }
+    
+    .timeline-body p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding: 1rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 4rem;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .timeline-body img {
+        height: 200px;
+    }
+    
+    .timeline-body h3 {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-body p {
+        font-size: 1rem;
+    }
+    
+    .year {
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+    }
+}

@@ -1,0 +1,41 @@
+/* 浅色主题 */
+[data-theme="light"] {
+    --primary-color: #5C6BC0;      /* 主题色 */
+    --primary-light: #8E99F3;      /* 主题色-浅色 */
+    --primary-dark: #26418F;       /* 主题色-深色 */
+    
+    --secondary-color: #26A69A;    /* 次要色 */
+    --accent-color: #FF7043;       /* 强调色 */
+    
+    --bg-primary: #ffffff;         /* 主背景色 */
+    --bg-secondary: #f8f9fa;       /* 次要背景色 */
+    --bg-accent: #e9ecef;          /* 强调背景色 */
+    
+    --text-primary: #333333;       /* 主文本色 */
+    --text-secondary: #666666;     /* 次要文本色 */
+    --text-light: #999999;         /* 浅色文本 */
+    
+    --border-color: #e0e0e0;       /* 边框颜色 */
+    --shadow-color: rgba(0,0,0,0.1); /* 阴影颜色 */
+}
+
+/* 深色主题 */
+[data-theme="dark"] {
+    --primary-color: #7986CB;
+    --primary-light: #9FA8DA;
+    --primary-dark: #5C6BC0;
+    
+    --secondary-color: #4DB6AC;
+    --accent-color: #FF8A65;
+    
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-accent: #333333;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-light: #999999;
+    
+    --border-color: #404040;
+    --shadow-color: rgba(0,0,0,0.3);
+} 

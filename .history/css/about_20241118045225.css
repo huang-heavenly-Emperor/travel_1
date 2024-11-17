@@ -1,0 +1,18 @@
+.timeline-content {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    /* ... 其他样式 ... */
+}
+
+.timeline-text h3 {
+    color: var(--text-primary);
+}
+
+.timeline-text p {
+    color: var(--text-secondary);
+}
+
+.year {
+    color: var(--text-light);
+    background: var(--accent-color);
+}

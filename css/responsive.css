@@ -1,0 +1,132 @@
+/* 响应式布局 */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* 移动端菜单将通过JS控制显示 */
+    }
+    
+    .hero-slider {
+        height: 50vh;
+    }
+    
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .destination-image {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-auth {
+        display: none;
+    }
+    
+    .hero-slider {
+        height: 40vh;
+    }
+    
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .destination-image {
+        height: 200px;
+    }
+}
+
+/* 页脚响应式样式 */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+    }
+    
+    .footer-section.about {
+        text-align: center;
+    }
+    
+    .footer-section h3::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* 移动端导航样式 */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        padding: 80px 40px;
+        transition: 0.3s ease;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-auth {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}
+
+/* 关于页面响应式样式 */
+@media screen and (max-width: 768px) {
+    .about-header {
+        height: 40vh;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .company-intro .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .intro-content, .intro-image {
+        width: 100%;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-header {
+        height: 30vh;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .member-image {
+        height: 250px;
+    }
+} 
